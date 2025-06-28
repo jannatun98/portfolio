@@ -24,11 +24,10 @@ function App() {
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className={`capitalize transition-colors ${
-                    activeSection === section 
-                      ? 'text-blue-600 border-b-2 border-blue-600' 
+                  className={`capitalize transition-colors ${activeSection === section
+                      ? 'text-blue-600 border-b-2 border-blue-600'
                       : 'text-gray-600 hover:text-blue-600'
-                  }`}
+                    }`}
                 >
                   {section}
                 </button>
@@ -52,8 +51,8 @@ function App() {
             <h1 className="text-5xl font-bold mb-4">Jannatun Naim Mitu</h1>
             <p className="text-2xl mb-6 text-blue-100">Software Developer</p>
             <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-              Passionate Software Developer with experience in PHP Laravel development. 
-              Currently working at STIT BD, dedicated to creating innovative software solutions 
+              Passionate Software Developer with experience in PHP Laravel development.
+              Currently working at STIT BD, dedicated to creating innovative software solutions
               and continuously expanding my technical expertise.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -89,7 +88,7 @@ function App() {
                   <span className="text-gray-600 font-medium mt-2 md:mt-0">Aug 2023 - Present</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Currently working as a Software Developer, contributing to various software development projects 
+                  Currently working as a Software Developer, contributing to various software development projects
                   and enhancing my skills in modern software technologies.
                 </p>
               </div>
@@ -104,7 +103,7 @@ function App() {
                   <span className="text-gray-600 font-medium mt-2 md:mt-0">Jan 2023 - Apr 2023</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed">
-                  Gained practical experience in software development as an intern, working on real-world projects 
+                  Gained practical experience in software development as an intern, working on real-world projects
                   and learning industry best practices.
                 </p>
               </div>
@@ -219,7 +218,7 @@ function App() {
                         <span className="text-gray-600">{item.level}%</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-3">
-                        <div 
+                        <div
                           className="bg-gradient-to-r from-blue-500 to-purple-600 h-3 rounded-full transition-all duration-700"
                           style={{ width: `${item.level}%` }}
                         ></div>
@@ -257,7 +256,7 @@ function App() {
                     Extracurricular
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Active participant in various cultural programs at school, college, and university level, 
+                    Active participant in various cultural programs at school, college, and university level,
                     demonstrating strong communication and performance skills.
                   </p>
                 </div>
@@ -266,6 +265,74 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Projects Section */}
+      <section id="project" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+            <Code className="inline-block mr-3 text-blue-600" />
+            Projects
+          </h2>
+          <div className="max-w-4xl mx-auto space-y-8">
+
+            {/* Project: ERP System */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Aasceend ERP System</h3>
+              <p className="text-gray-700 mb-4">
+                A complete ERP system developed with Laravel Blade, including modules like inventory, HR, finance, and user management.
+              </p>
+              <a href="#" className="text-blue-600 hover:underline">Private Repository</a>
+            </div>
+
+            {/* Project: School Management System */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">School Management System</h3>
+              <p className="text-gray-700 mb-4">
+                A school administration system built in Laravel Blade to manage student records, classes, attendance, and staff roles.
+              </p>
+              <a href="#" className="text-blue-600 hover:underline">Private Repository</a>
+            </div>
+
+            {/* Project: Event Ticket Booking */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Event Ticket Booking System</h3>
+              <p className="text-gray-700 mb-4">
+                A event booking platform where users can browse and book tickets for various events. Built with modern CSS and JS.
+              </p>
+              <a href="https://github.com/yourusername/Event-Ticket-Booking-System" target="_blank" className="text-blue-600 hover:underline">View Project</a>
+            </div>
+
+            {/* Project: Crowd Funding System */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Crowd Funding Management System</h3>
+              <p className="text-gray-700 mb-4">
+                A platform for managing crowdfunding campaigns, tracking donations, and user participation.
+              </p>
+              <a href="https://github.com/yourusername/Crowd-Funding-Management-System" target="_blank" className="text-blue-600 hover:underline">View Project</a>
+            </div>
+
+            {/* Project: E-commerce Website */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">E-commerce Website</h3>
+              <p className="text-gray-700 mb-4">
+                Developed a e-commerce site featuring product listings, cart, user login, admin dashboard, and payment integration.
+              </p>
+              <a href="#" className="text-blue-600 hover:underline">Private Repository</a>
+            </div>
+
+            {/* Project: SSLCommerz Integration */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">SSLCommerz Payment Gateway Integration</h3>
+              <p className="text-gray-700 mb-4">
+                Integrated SSLCommerz payment gateway into a Laravel-based application to process secure online transactions.
+              </p>
+              <a href="#" className="text-blue-600 hover:underline">Private Repository</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 text-white">
@@ -335,8 +402,8 @@ function App() {
                 </div>
                 <div className="mt-6 p-4 bg-white/10 rounded-lg">
                   <p className="text-sm leading-relaxed">
-                    I'm passionate about web development and always eager to learn new technologies. 
-                    Currently focused on expanding my skills in modern web frameworks and contributing 
+                    I'm passionate about web development and always eager to learn new technologies.
+                    Currently focused on expanding my skills in modern web frameworks and contributing
                     to innovative projects in the tech industry.
                   </p>
                 </div>
