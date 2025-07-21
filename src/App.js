@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Github, MapPin, Calendar, User, Code, Briefcase, GraduationCap, Award, Globe } from 'lucide-react';
+import { Mail, Github, MapPin, Code, Briefcase, GraduationCap } from 'lucide-react';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
@@ -43,7 +43,7 @@ function App() {
           <div className="max-w-4xl mx-auto">
             <div className="w-32 h-32 bg-white/20 rounded-full mx-auto mb-8 flex items-center justify-center backdrop-blur-sm overflow-hidden">
               <img
-                src="/Mitu.jpg"
+                src="public/mitu.jpg"
                 alt="Jannatun Naim Mitu"
                 className="w-full h-full object-cover rounded-full"
               />
@@ -60,7 +60,7 @@ function App() {
                 <Mail size={20} />
                 Get In Touch
               </a>
-              <a href="https://github.com/jannatun98" className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-lg transition-all backdrop-blur-sm flex items-center gap-2">
+              <a href="https://jannatun98.github.io/portfolio" className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-lg transition-all backdrop-blur-sm flex items-center gap-2">
                 <Github size={20} />
                 View GitHub
               </a>
@@ -133,132 +133,77 @@ function App() {
             <GraduationCap className="inline-block mr-3 text-blue-600" />
             Education
           </h2>
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-4xl mx-auto">
             {/* Bachelor's Degree */}
             <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-500">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-800">Bachelor of Computer Science & Engineering</h3>
+                  <h3 className="text-2xl font-bold text-gray-800">Bachelor of Computer Science & Engineering (BCSE)</h3>
                   <p className="text-xl text-blue-600 font-semibold">International University of Business Agriculture & Technology</p>
                 </div>
-                <span className="text-gray-600 font-medium mt-2 md:mt-0">2018 - 2023</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">
-                  CGPA: 3.27/4.00
-                </span>
-              </div>
-            </div>
-
-            {/* HSC */}
-            <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-green-500">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-800">Higher Secondary Certificate (H.S.C)</h3>
-                  <p className="text-xl text-green-600 font-semibold">Milestone College, Dhaka</p>
-                </div>
-                <span className="text-gray-600 font-medium mt-2 md:mt-0">2017</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">
-                  GPA: 4.08/5.00
-                </span>
-                <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full">Science Group</span>
-              </div>
-            </div>
-
-            {/* SSC */}
-            <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-purple-500">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-800">Secondary School Certificate (S.S.C)</h3>
-                  <p className="text-xl text-purple-600 font-semibold">Holy Child School and College</p>
-                </div>
-                <span className="text-gray-600 font-medium mt-2 md:mt-0">2015</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-semibold">
-                  GPA: 4.44/5.00
-                </span>
-                <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full">Science Group</span>
+                <span className="text-gray-600 font-medium mt-2 md:mt-0">Passing Year: 2023</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+
       {/* Skills Section */}
       <section id="skills" className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             <Code className="inline-block mr-3 text-blue-600" />
-            Skills & Languages
+            Skills & Technologies
           </h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Technical Skills */}
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl shadow-sm">
-                <h3 className="text-2xl font-bold mb-6 text-gray-800 flex items-center">
-                  <Code className="mr-3 text-blue-600" />
-                  Technical Skills
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Expertise */}
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl shadow-lg">
+                <h3 className="text-2xl font-bold mb-6 text-gray-800 text-center">
+                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-lg">EXPERTISE</span>
                 </h3>
                 <div className="space-y-4">
-                  {[
-                    { skill: 'PHP (Laravel)', level: 85 },
-                    { skill: 'HTML & CSS', level: 90 },
-                    { skill: 'Bootstrap', level: 80 },
-                    { skill: 'OOP PHP', level: 75 },
-                    { skill: 'MySQL', level: 80 },
-                    { skill: 'GitHub', level: 85 },
-                    { skill: 'Microsoft Office', level: 90 }
-                  ].map((item) => (
-                    <div key={item.skill}>
-                      <div className="flex justify-between mb-2">
-                        <span className="font-semibold text-gray-700">{item.skill}</span>
-                        <span className="text-gray-600">{item.level}%</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-3">
-                        <div
-                          className="bg-gradient-to-r from-blue-500 to-purple-600 h-3 rounded-full transition-all duration-700"
-                          style={{ width: `${item.level}%` }}
-                        ></div>
-                      </div>
+                  {['PHP', 'Laravel'].map((skill) => (
+                    <div key={skill} className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
+                      <span className="font-bold text-gray-800">{skill}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Languages */}
-              <div className="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-xl shadow-sm">
-                <h3 className="text-2xl font-bold mb-6 text-gray-800 flex items-center">
-                  <Globe className="mr-3 text-green-600" />
-                  Languages
+              {/* Comfortable */}
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-xl shadow-lg">
+                <h3 className="text-2xl font-bold mb-6 text-gray-800 text-center">
+                  <span className="bg-green-600 text-white px-3 py-1 rounded-full text-lg">COMFORTABLE</span>
                 </h3>
-                <div className="space-y-6">
-                  <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
-                    <span className="font-semibold text-gray-700">Bengali</span>
-                    <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Native</span>
-                  </div>
-                  <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
-                    <span className="font-semibold text-gray-700">English</span>
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Excellent</span>
-                  </div>
-                  <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
-                    <span className="font-semibold text-gray-700">Hindi</span>
-                    <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">Excellent</span>
-                  </div>
+                <div className="space-y-3">
+                  {['JavaScript', 'jQuery', 'Bootstrap', 'CodeIgniter', 'Git & GitHub', 'Server Management (cPanel)'].map((skill) => (
+                    <div key={skill} className="bg-white p-3 rounded-lg shadow-sm border-l-4 border-green-500">
+                      <span className="font-semibold text-gray-700">{skill}</span>
+                    </div>
+                  ))}
                 </div>
+              </div>
 
-                {/* Extracurricular */}
-                <div className="mt-8">
-                  <h4 className="text-lg font-bold mb-3 text-gray-800 flex items-center">
-                    <Award className="mr-2 text-yellow-600" size={20} />
-                    Extracurricular
-                  </h4>
-                  <p className="text-gray-700 leading-relaxed">
-                    Active participant in various cultural programs at school, college, and university level,
-                    demonstrating strong communication and performance skills.
-                  </p>
+              {/* Tools & Soft Skills */}
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-xl shadow-lg">
+                <h3 className="text-2xl font-bold mb-6 text-gray-800 text-center">
+                  <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-lg">TOOLS</span>
+                </h3>
+                <div className="space-y-3 mb-6">
+                  {['VS Code', 'GitHub', 'Postman', 'cPanel', 'Laragon', 'XAMPP', 'Composer'].map((tool) => (
+                    <div key={tool} className="bg-white p-3 rounded-lg shadow-sm border-l-4 border-purple-500">
+                      <span className="font-semibold text-gray-700">{tool}</span>
+                    </div>
+                  ))}
+                </div>
+                
+                <h4 className="text-lg font-bold mb-3 text-gray-800">Soft Skills</h4>
+                <div className="flex flex-wrap gap-2">
+                  {['Communication', 'Team Work', 'Problem Solving', 'Time Management', 'Quick Learner', 'Proficient in English'].map((skill) => (
+                    <span key={skill} className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border">{skill}</span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -267,68 +212,97 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="project" className="py-16 bg-gray-50">
+      <section id="projects" className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             <Code className="inline-block mr-3 text-blue-600" />
             Projects
           </h2>
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              
+              {/* E-commerce System */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-start justify-between mb-4">
+                  <h3 className="text-2xl font-bold text-gray-800">E-commerce System</h3>
+                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Client Based</span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Developed a feature-rich Laravel-based e-commerce platform with add to cart functionality, 
+                  secure SSLCommerz payment integration, product catalog, order tracking, and automated customer email notifications.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Laravel</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">SSLCommerz</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">MySQL</span>
+                </div>
+                <span className="text-gray-500 flex items-center gap-1">
+                  <Github size={16} />
+                  Private Repository
+                </span>
+              </div>
 
-            {/* Project: ERP System */}
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Aasceend ERP System</h3>
-              <p className="text-gray-700 mb-4">
-                A complete ERP system developed with Laravel Blade, including modules like inventory, HR, finance, and user management.
-              </p>
-              <a href="#" className="text-blue-600 hover:underline">Private Repository</a>
+              {/* School Management System */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">School Management System</h3>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Laravel-based system with modular architecture for effective academic and administrative control. 
+                  Supports role-based access and real-time data operation. Also developed CodeIgniter-based version.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Laravel</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">CodeIgniter</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Role-based Access</span>
+                </div>
+                <span className="text-gray-500 flex items-center gap-1">
+                  <Github size={16} />
+                  Private Repository
+                </span>
+              </div>
+
+              {/* ERP Solutions */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-start justify-between mb-4">
+                  <h3 className="text-2xl font-bold text-gray-800">ERP Solutions</h3>
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Client Based</span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Contributed to modules like Income, Sales and Asset Management using Laravel, MySQL, and REST APIs. 
+                  Comprehensive enterprise resource planning solution.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Laravel</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">MySQL</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">REST APIs</span>
+                </div>
+                <span className="text-gray-500 flex items-center gap-1">
+                  <Github size={16} />
+                  Private Repository
+                </span>
+              </div>
+
+              {/* Cheque Printing System */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-start justify-between mb-4">
+                  <h3 className="text-2xl font-bold text-gray-800">Cheque Printing System</h3>
+                  <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">Client Based</span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Designed and developed a system to generate and print bank cheques with dynamic payee, amount, 
+                  and date fields, including alignment settings for different cheque formats.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Laravel</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Dynamic Printing</span>
+                  <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Banking</span>
+                </div>
+                <span className="text-gray-500 flex items-center gap-1">
+                  <Github size={16} />
+                  Private Repository
+                </span>
+              </div>
+
             </div>
-
-            {/* Project: School Management System */}
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">School Management System</h3>
-              <p className="text-gray-700 mb-4">
-                A school administration system built in Laravel Blade to manage student records, classes, attendance, and staff roles.
-              </p>
-              <a href="#" className="text-blue-600 hover:underline">Private Repository</a>
-            </div>
-
-            {/* Project: Event Ticket Booking */}
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Event Ticket Booking System</h3>
-              <p className="text-gray-700 mb-4">
-                A event booking platform where users can browse and book tickets for various events. Built with modern CSS and JS.
-              </p>
-              <a href="https://github.com/yourusername/Event-Ticket-Booking-System" target="_blank" className="text-blue-600 hover:underline">View Project</a>
-            </div>
-
-            {/* Project: Crowd Funding System */}
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Crowd Funding Management System</h3>
-              <p className="text-gray-700 mb-4">
-                A platform for managing crowdfunding campaigns, tracking donations, and user participation.
-              </p>
-              <a href="https://github.com/yourusername/Crowd-Funding-Management-System" target="_blank" className="text-blue-600 hover:underline">View Project</a>
-            </div>
-
-            {/* Project: E-commerce Website */}
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">E-commerce Website</h3>
-              <p className="text-gray-700 mb-4">
-                Developed a e-commerce site featuring product listings, cart, user login, admin dashboard, and payment integration.
-              </p>
-              <a href="#" className="text-blue-600 hover:underline">Private Repository</a>
-            </div>
-
-            {/* Project: SSLCommerz Integration */}
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">SSLCommerz Payment Gateway Integration</h3>
-              <p className="text-gray-700 mb-4">
-                Integrated SSLCommerz payment gateway into a Laravel-based application to process secure online transactions.
-              </p>
-              <a href="#" className="text-blue-600 hover:underline">Private Repository</a>
-            </div>
-
           </div>
         </div>
       </section>
@@ -357,13 +331,6 @@ function App() {
                     </div>
                   </div>
                   <div className="flex items-center gap-4 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-                    <Phone className="text-white" size={24} />
-                    <div>
-                      <p className="font-semibold">Phone</p>
-                      <p className="text-blue-100">+880 1777121327</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
                     <Github className="text-white" size={24} />
                     <div>
                       <p className="font-semibold">GitHub</p>
@@ -377,7 +344,6 @@ function App() {
                     <div>
                       <p className="font-semibold">Location</p>
                       <p className="text-blue-100">Uttara, Dhaka, Bangladesh</p>
-                      <p className="text-sm text-blue-200">Originally from Bogra</p>
                     </div>
                   </div>
                 </div>
@@ -386,20 +352,6 @@ function App() {
               {/* Personal Info */}
               <div className="bg-white/10 p-8 rounded-xl backdrop-blur-sm">
                 <h3 className="text-2xl font-bold mb-6">About Me</h3>
-                <div className="space-y-3 text-blue-100">
-                  <div className="flex items-center gap-3">
-                    <Calendar size={16} />
-                    <span>Born: July 6, 1998</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <User size={16} />
-                    <span>Nationality: Bangladeshi</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="w-4 h-4 bg-red-500 rounded-full"></span>
-                    <span>Blood Group: AB+</span>
-                  </div>
-                </div>
                 <div className="mt-6 p-4 bg-white/10 rounded-lg">
                   <p className="text-sm leading-relaxed">
                     I'm passionate about web development and always eager to learn new technologies.
@@ -417,7 +369,8 @@ function App() {
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-6 text-center">
           <p className="text-gray-400">
-            © 2025 Jannatun Naim Mitu. Built with React and Tailwind CSS.
+            {/* © 2025 Jannatun Naim Mitu. Built with React and Tailwind CSS. */}
+            © 2025 Jannatun Naim Mitu
           </p>
         </div>
       </footer>
